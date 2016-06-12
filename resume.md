@@ -3,6 +3,7 @@
 ***
 ## Objective
 ***
+To obtain a development position at a growing technology company where hard work, high performance, and quality and customer driven development consistently defines success.
 ## Relevant Experience
 ***
 ### Hosting.com
