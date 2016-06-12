@@ -49,3 +49,5 @@ Assist QA team in performing test cases and recording/reporting their results to
 **Languages:** C# (versions 3-6), SQL, Python, HTML, JavaScript, CSS, Java
 
 **Frameworks:** Entity Framework, Knockout, Nodejs, Angular2, Flask, Flask-Restful
+
+**Tools:** Docker, Docker-Compose, Vagrant, TFS, git, TFSVC, Octopus Deploy, Azure, IIS, MS SQL Server
