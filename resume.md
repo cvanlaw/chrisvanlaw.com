@@ -26,7 +26,7 @@ Design and develop managed services products to provide customers tools for mana
 
 ### Raymond James & Associates
 #### Security Developer and Team Lead | May 2012 - July 2014
-Lead the IAM Services team to deliver to design and develop an in-house user provisioning system to replace legacy COTS product and increase provisioning accuracy from 20% to 95%.
+Led the IAM Services team to deliver to design and develop an in-house user provisioning system to replace legacy COTS product and increase provisioning accuracy from 20% to 95%.
 * Tech/Team Lead for Identity and Access Management Services. Responsible for Sprint and Release planning as well as Code and Design Reviews and backlog grooming
 * Designed, developed, and led team to implement an automated user provisioning system to add/remove/modify permissions of employees based on HR events
 * Provided 24x7 on-call support for custom and COT IAM systems including Courion, SailPoint, RSA SecurID, and ClearTrust
