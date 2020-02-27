@@ -1,8 +1,15 @@
- version: 2
- jobs:
-   build:
-     docker:
-       - image: circleci/ruby:2.4.1
-     steps:
-       - checkout
-       - run: echo "A first hello"
+jobs:
+  check-and-build:
+    executor: docker/machine
+    steps:
+      - checkout
+      - docker/check
+      - docker/build:
+          image: $CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME
+orbs:
+  docker: circleci/docker@0.5.21
+version: 2.1
+workflows:
+  build-docker-image-only:
+    jobs:
+      - check-and-build
