@@ -1,15 +1,21 @@
 jobs:
-  check-and-build:
+  build:
     executor: docker/machine
     steps:
       - checkout
       - docker/check
       - docker/build:
           image: $CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME
+      - docker/push:
+          digest-path: /tmp/digest.txt
+          image: $CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME
+      - run:
+          command: |
+            echo "Digest is: $(</tmp/digest.txt)"
 orbs:
   docker: circleci/docker@0.5.21
 version: 2.1
 workflows:
   build-docker-image-only:
     jobs:
-      - check-and-build
+      - build
