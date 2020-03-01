@@ -5,10 +5,10 @@ jobs:
       - checkout
       - docker/check
       - docker/build:
-          image: $CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME
+          image: $CIRCLE_PROJECT_USERNAME/chrisvanlawdotcom
       - docker/push:
           digest-path: /tmp/digest.txt
-          image: $CIRCLE_PROJECT_USERNAME/$CIRCLE_PROJECT_REPONAME
+          image: $CIRCLE_PROJECT_USERNAME/chrisvanlawdotcom
       - run:
           command: |
             echo "Digest is: $(</tmp/digest.txt)"
