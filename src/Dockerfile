@@ -1,6 +1,7 @@
 FROM jekyll/builder:4.2.0 as builder
 
 RUN mkdir /app
+RUN chown -R jekyll:jekyll /app
 WORKDIR /app
 COPY . .
 RUN jekyll build
