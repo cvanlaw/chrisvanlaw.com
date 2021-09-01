@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/cvanlaw/chrisvanlaw.com.svg?style=svg)](https://circleci.com/gh/cvanlaw/chrisvanlaw.com)
+[![Build](https://github.com/cvanlaw/chrisvanlaw.com/actions/workflows/website.yml/badge.svg)](https://github.com/cvanlaw/chrisvanlaw.com/actions/workflows/website.yml)
 
 # Chris Van Law personal web page
 ***
