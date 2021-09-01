@@ -1,7 +1,7 @@
 FROM jekyll/builder:4.2.0 as builder
 
-RUN mkdir /srv/jekyll/app
-WORKDIR /srv/jekyll/app
+RUN mkdir /app
+WORKDIR /app
 COPY . .
 RUN jekyll build
 
@@ -10,4 +10,4 @@ RUN rm /etc/nginx/conf.d/default.conf
 COPY ./nginx /etc/nginx/
 
 RUN mkdir -p /var/www/chrisvanlaw.com/
-COPY --from=builder /srv/jekyll/app/_site /var/www/chrisvanlaw.com/
+COPY --from=builder /app/_site /var/www/chrisvanlaw.com/
