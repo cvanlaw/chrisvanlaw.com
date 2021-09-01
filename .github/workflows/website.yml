@@ -37,4 +37,6 @@ jobs:
         with:
           context: .
           push: ${{ github.ref == 'refs/heads/main' && github.event_name == 'push' }}
-          tags: cvanlaw/chrisvanlawcom:latest,cvanlaw/chrisvanlawcom:${{ steps.semver.new_tag }}
+          tags: cvanlaw/chrisvanlawcom:latest,cvanlaw/chrisvanlawcom:$SEMVER
+        env:
+          SEMVER: ${{ steps.semver.new_tag }}
