@@ -34,5 +34,5 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          push: github.ref == 'refs/heads/main' && github.event_name == 'push'
+          push: ${{ github.ref == 'refs/heads/main' && github.event_name == 'push' }}
           tags: cvanlaw/chrisvanlawcom:latest
