@@ -25,11 +25,14 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           WITH_V: false
           DRY_RUN: ${{ !(github.ref == 'refs/heads/main' && github.event_name == 'push') }}
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1
+      - run: gem install jekyll
       - name: Build
         id: build
         working-directory: src
         run: |
-          gem install jekyll
           jekyll build
       - name: Upload Build Artifact
         uses: actions/upload-artifact@v3
