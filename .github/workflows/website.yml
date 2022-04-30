@@ -4,13 +4,15 @@ on:
     branchs:
       - main
   pull_request:
+
+env:
+  BUCKET_NAME: "chrisvanlaw.com"
+  DISTRIBUTION_ID: "E3UKNMTEMHSZAC"
+
 jobs:
   build:
     name: 'Build'
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./src
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -23,13 +25,25 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           WITH_V: false
           DRY_RUN: ${{ !(github.ref == 'refs/heads/main' && github.event_name == 'push') }}
-      - name: Login to Docker
-        run: echo $DOCKERHUB_PASSWORD | docker login --username $DOCKERHUB_USERNAME --password-stdin
-        env:
-          DOCKERHUB_PASSWORD: ${{ secrets.DOCKERHUB_TOKEN }}
-          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
-      - name: Build docker image
-        run: docker build . --tag cvanlaw/chrisvanlawcom:latest --tag cvanlaw/chrisvanlawcom:${{ steps.semver.outputs.new_tag }}
-      - name: Push docker image
-        run: docker push cvanlaw/chrisvanlawcom:${{ steps.semver.outputs.new_tag }} && docker push cvanlaw/chrisvanlawcom:latest
-        if: ${{ github.ref == 'refs/heads/main' && github.event_name == 'push' }}
+      - name: Build
+        id: build
+        working-directory: src
+        bash: |
+          gem install jekyll
+          jekyll build
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: site_assets
+          path: ./_site
+
+
+        # - bash: aws s3 sync . s3://$BUCKET_NAME --metadata-directive 'REPLACE' && aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths /index.html
+        #     displayName: Deploy UI to S3
+        #     workingDirectory: '$(Pipeline.Workspace)/sp_ng_ui'
+        #     env:
+        #       AWS_ACCESS_KEY_ID: $(AWS_ACCESS_KEY_ID)
+        #       AWS_SECRET_ACCESS_KEY: $(AWS_SECRET_ACCESS_KEY)
+        #       BUCKET_NAME: $(PRODUCTION_UI_BUCKET_NAME)
+        #       AWS_REGION: us-east-1
+        #       DISTRIBUTION_ID: $(PRODUCTION_DISTRIBUTION_ID)
