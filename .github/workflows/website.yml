@@ -27,12 +27,13 @@ jobs:
           DRY_RUN: ${{ !(github.ref == 'refs/heads/main' && github.event_name == 'push') }}
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.6
-      - run: gem install jekyll
+          ruby-version: 3.1
+      - run: gem install jekyll bundler
       - name: Build
         id: build
         working-directory: src
         run: |
+          bundle install
           jekyll build
       - name: Upload Build Artifact
         uses: actions/upload-artifact@v3
