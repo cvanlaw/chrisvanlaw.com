@@ -39,7 +39,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: site_assets
-          path: ./_site
+          path: src/_site
 
 
         # - bash: aws s3 sync . s3://$BUCKET_NAME --metadata-directive 'REPLACE' && aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths /index.html
