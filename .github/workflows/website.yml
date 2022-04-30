@@ -34,7 +34,7 @@ jobs:
         working-directory: src
         run: |
           bundle install
-          jekyll build
+          bundle exec jekyll build
       - name: Upload Build Artifact
         uses: actions/upload-artifact@v3
         with:
