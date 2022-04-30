@@ -45,6 +45,7 @@ jobs:
     name: 'Deploy'
     needs: build
     runs-on: ubuntu-20.04
+    if: github.ref_name == 'main'
     steps:
       - name: Download Build Artifact
         uses: actions/download-artifact@v3
@@ -52,7 +53,6 @@ jobs:
           name: build_assets
           path: build_assets
       - name: Upload to S3 Bucket and Refresh Cloudfront
-        if: github.ref_name == 'main'
         working-directory: build_assets
         run: |
           aws s3 sync . s3://$BUCKET_NAME --metadata-directive 'REPLACE'
