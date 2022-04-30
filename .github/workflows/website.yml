@@ -1,7 +1,7 @@
 name: 'Build & Push Container Image'
 on:
   push:
-    branchs:
+    branches:
       - main
   pull_request:
 
@@ -36,6 +36,7 @@ jobs:
           bundle install
           bundle exec jekyll build
       - name: Upload Build Artifact
+        if: github.ref_name == 'main'
         uses: actions/upload-artifact@v3
         with:
           name: site_assets
