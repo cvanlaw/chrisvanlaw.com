@@ -28,7 +28,7 @@ jobs:
       - name: Build
         id: build
         working-directory: src
-        bash: |
+        run: |
           gem install jekyll
           jekyll build
       - name: Upload Build Artifact
