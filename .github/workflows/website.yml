@@ -5,10 +5,6 @@ on:
       - main
   pull_request:
 
-env:
-  BUCKET_NAME: "chrisvanlaw.com"
-  DISTRIBUTION_ID: "E3UKNMTEMHSZAC"
-
 jobs:
   build:
     name: 'Build'
@@ -61,3 +57,5 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: us-east-1
+          BUCKET_NAME: ${{ secrets.BUCKET_NAME }}
+          DISTRIBUTION_ID: ${{ secrets.DISTRIBUTION_ID }}
