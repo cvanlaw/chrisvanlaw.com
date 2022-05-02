@@ -88,7 +88,7 @@ employees based on HR events
 * Provided 24x7 on-call support for custom and COT IAM systems including Courion, SailPoint, RSA SecurID, and ClearTrust
 * Assisted in implementation of SailPoint IAM solution
 
-#### Security Access Analyst Level 1 & 2 | May 2007 - May 2012
+#### Security Access Analyst Level 1 & 2 | *May 2007 - May 2012*
 
 Manage user permissions on a manual basis to ensure employees have appropriate system access to perform their jobs.
 
@@ -116,6 +116,7 @@ Assist QA team in performing test cases and recording/reporting their results to
 * CSS
 * Java
 * PowerShell
+* Bash
 
 ### Frameworks
 
@@ -123,13 +124,21 @@ Assist QA team in performing test cases and recording/reporting their results to
 * .NET (3-4.8 and Core <= 3.1)
 * Angular (2-10)
 
+### Public Clouds & Certifications
+* AWS
+    * Solutions Architect Associate
+* Azure
 ### Tools 
 
+* AWS
 * Azure
 * Kubernetes
 * Helm
 * Terraform
-* TFS/Azure DevOps
+* CI/CD
+    * Azure DevOps
+    * GitHub Actions
+    * GitLab CI
 * git
 * Octopus Deploy
 * nginx
