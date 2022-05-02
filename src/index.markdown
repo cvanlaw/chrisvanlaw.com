@@ -11,11 +11,21 @@ To obtain a senior development position with a growing technology company where 
 customer-driven development consistently define success.
 
 # Experience
+### rearc
+A cloud engineering and devops consulting company.
+#### Senior Engineer | *August 2021 - Present*
+Lead customer engagements designing and implementing cloud-native and microservice architectures.
+
+* Designed and delivered an end to end SaaS authentication and authorization system
+* Implemented continuous delivery pipelines for infrastructure as code and application components
+* Designed and delivered application migration from on-premise to cloud
+* Mentored customer engineers on cloud and devops best practices
+
 ### Pacific Medical Data Solutions, A LifePoint Health Company
 
 Healthcare Revenue Cycle Management and Provider Compensation Services
 
-#### Director of IT & Engineering | *May 2017 - Present*
+#### Director of IT & Engineering | *May 2017 - August 2021*
 
 Designed, developed, and launched new SaaS product in the healthcare provider compensation space and created a technology 
 department to support the Revenue Cycle Management business of the company and establish a Software Engineering department.
