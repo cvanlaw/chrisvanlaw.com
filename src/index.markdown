@@ -12,9 +12,11 @@ customer-driven development consistently define success.
 
 # Experience
 ### rearc
-A cloud engineering and devops consulting company.
-#### Senior Engineer | *August 2021 - Present*
-Lead customer engagements designing and implementing cloud-native and microservice architectures.
+A boutique cloud engineering and devops consulting company.
+#### Lead Cloud Engineer | *August 2021 - Present*
+Lead engagements with customers, designing and implementing cloud-native and microservice architectures, delivering an end-to-end SaaS authentication and authorization system, replatforming applications on the cloud, and implementing continuous delivery pipelines for infrastructure as code and application components.
+
+Director of IT & Engineering | Pacific Medical Data Solutions, A LifePoint Health Company | May 2017 - August 2021
 
 * Designed and delivered an end to end SaaS authentication and authorization system
 * Implemented continuous delivery pipelines for infrastructure as code and application components
@@ -27,16 +29,7 @@ Healthcare Revenue Cycle Management and Provider Compensation Services
 
 #### Director of IT & Engineering | *May 2017 - August 2021*
 
-Designed, developed, and launched new SaaS product in the healthcare provider compensation space and created a technology 
-department to support the Revenue Cycle Management business of the company and establish a Software Engineering department.
-
-* Designed and developed SaaS product using a distributed microservices architecture
-* Implemented a continuous deployment pipeline using Azure Pipelines, Octopus Deploy, Helm, and Azure Kubernetes Service
-* Implemented and trained team members on an Infrastructure as Code approach using Terraform
-* Grew software engineering team from myself to a team of five
-* Defined and implemented an SDLC
-* Defined and executed a hiring plan
-* Created, maintained, and executed product roadmap
+Designed, developed, and launched a new SaaS product in the healthcare provider compensation space, creating a technology department to support the Revenue Cycle Management business, establishing a Software Engineering department. Implemented a continuous deployment pipeline using Azure Pipelines, Octopus Deploy, Helm, and Azure Kubernetes Service, and trained team members on Infrastructure as Code using Terraform. Grew software engineering team from myself to a team of five, defined and implemented an SDLC, executed a hiring plan, and created, maintained, and executed product roadmap.
 
 ### IDMWorks
 
@@ -44,10 +37,7 @@ Identity & Access Management and Integration Consulting Services
 
 #### IAM Engineer | *September 2016 – May 2017*
 
-Provide Client with SailPoint Identity IQ implementation and development expertise using Java, Beanshell, SQL and other tools.
-
-* Installed SailPoint Identity IQ based on client requirements
-* Developed custom connector logic to tailor IIQ connectors and integrations to the needs of the client
+Provided Client with SailPoint Identity IQ implementation and development expertise using Java, Beanshell, SQL and other tools. Installed SailPoint Identity IQ based on client requirements, developed custom connector logic to tailor IIQ connectors and integrations to the needs of the client.
 
 ### Hosting.com
 
@@ -55,7 +45,7 @@ Managed services and hosting provider (dedicated, private/public VMware cloud, A
 
 #### Technical Lead | *February 2016 – September 2016*
 
-Design and develop products which enrich our managed service offerings, while providing tools for managing infrastructure in shared, dedicated, private/public VMware cloud, AWS, and Azure environments. Provide guidance regarding technical decisions and mentor team members to develop skills and best practices.
+Designed and developed products to enrich managed service offerings, while providing tools for managing infrastructure in shared, dedicated, private/public VMware cloud, AWS, and Azure environments. Provided guidance regarding technical decisions and mentored team members to develop skills and best practices.
 
 In addition to previous responsibilities:
 * Mentored team members in best practices for web services, automated testing, and design patterns
