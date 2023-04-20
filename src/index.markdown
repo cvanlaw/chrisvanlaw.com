@@ -116,6 +116,7 @@ Assist QA team in performing test cases and recording/reporting their results to
 * AWS
     * Solutions Architect Associate
 * Azure
+
 ### Tools 
 
 * AWS
