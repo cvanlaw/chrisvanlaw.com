@@ -16,8 +16,6 @@ A boutique cloud engineering and devops consulting company.
 #### Lead Cloud Engineer | *August 2021 - Present*
 Lead engagements with customers, designing and implementing cloud-native and microservice architectures, delivering an end-to-end SaaS authentication and authorization system, replatforming applications on the cloud, and implementing continuous delivery pipelines for infrastructure as code and application components.
 
-Director of IT & Engineering | Pacific Medical Data Solutions, A LifePoint Health Company | May 2017 - August 2021
-
 * Designed and delivered an end to end SaaS authentication and authorization system
 * Implemented continuous delivery pipelines for infrastructure as code and application components
 * Designed and delivered application migration from on-premise to cloud
