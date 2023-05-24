@@ -7,19 +7,19 @@ layout: home
 
 # Objective
 
-To obtain a senior development position with a growing technology company where hard work, high performance, quality- and 
-customer-driven development consistently define success.
+Highly motivated Senior Engineer seeking a challenging senior engineer position, where I can utilize my expertise in cloud-native and microservice architectures and extensive experience in delivering quality solutions to Fortune 100 customers.
 
 # Experience
 ### rearc
 A boutique cloud engineering and devops consulting company.
 #### Lead Cloud Engineer | *August 2021 - Present*
-Lead engagements with customers, designing and implementing cloud-native and microservice architectures, delivering an end-to-end SaaS authentication and authorization system, replatforming applications on the cloud, and implementing continuous delivery pipelines for infrastructure as code and application components.
+Lead customer engagements designing and implementing cloud-native and microservice architectures. Throughout multiple customer engagements:
 
-* Designed and delivered an end to end SaaS authentication and authorization system
-* Implemented continuous delivery pipelines for infrastructure as code and application components
-* Designed and delivered application migration from on-premise to cloud
-* Mentored customer engineers on cloud and devops best practices
+* Designed and delivered an end-to-end SaaS authentication and authorization system using OAuth 2.0 and OIDC. Delivered user migration plan and tooling to allow the customer to migrate users with minimal end-user impact.
+* Implemented continuous delivery pipelines for infrastructure as code and application components and migrated customer to trunk-based development.
+* Designed and delivered an application architecture to re-platform a traditional on-premise application to EKS.
+* Implemented a robust test orchestration platform for a customer’s shared IaC module and data platform using AWS Step Functions
+* Mentored customer engineers and internal engineers
 
 ### Pacific Medical Data Solutions, A LifePoint Health Company
 
@@ -109,8 +109,9 @@ Assist QA team in performing test cases and recording/reporting their results to
 ### Frameworks
 
 * Entity Framework (4+ and Core)
-* .NET (3-4.8 and Core <= 3.1)
-* Angular (2-10)
+* .NET (3-4.8, Core, 5-7)
+* Angular (2-14)
+* react
 
 ### Public Clouds & Certifications
 * AWS
@@ -122,6 +123,8 @@ Assist QA team in performing test cases and recording/reporting their results to
 * AWS
 * Azure
 * Kubernetes
+    * EKS
+    * AKS
 * Helm
 * Terraform
 * CI/CD
