@@ -7,7 +7,7 @@ layout: home
 
 # Objective
 
-Highly motivated Senior Engineer seeking a challenging senior engineer position, where I can utilize my expertise in cloud-native and microservice architectures and extensive experience in delivering quality solutions to Fortune 100 customers.
+Highly motivated software and devops engineer seeking a challenging senior indeividual contributor position, where I can utilize my expertise in cloud-native and microservice architectures and extensive experience in delivering quality solutions to Fortune 100 customers.
 
 # Experience
 ### rearc
