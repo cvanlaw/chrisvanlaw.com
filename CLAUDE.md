@@ -8,19 +8,23 @@ Personal website for Chris Van Law (chrisvanlaw.com) built with Jekyll 4.2 and d
 
 ## Development Commands
 
-All commands run from the `src/` directory:
+Using Makefile (run from repository root):
 
 ```bash
-# Install dependencies
+make help      # Show available commands
+make install   # Install dependencies
+make serve     # Run local development server (auto-rebuilds on changes)
+make build     # Build site (output to src/_site/)
+make drafts    # Run server with drafts visible
+make clean     # Clean generated files
+```
+
+Or use bundle commands directly from the `src/` directory:
+
+```bash
 bundle install
-
-# Local development server (auto-rebuilds on changes)
 bundle exec jekyll serve
-
-# Build site (output to _site/)
 bundle exec jekyll build
-
-# Build with drafts visible
 bundle exec jekyll serve --drafts
 ```
 
