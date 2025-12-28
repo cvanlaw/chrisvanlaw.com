@@ -11,13 +11,13 @@ help: ## Show this help message
 install: ## Install dependencies
 	cd $(JEKYLL_DIR) && bundle install
 
-serve: ## Run local development server
-	cd $(JEKYLL_DIR) && bundle exec jekyll serve
-
-build: ## Build the site
+build: install ## Build the site
 	cd $(JEKYLL_DIR) && bundle exec jekyll build
 
-drafts: ## Run server with drafts visible
+serve: install build ## Run local development server
+	cd $(JEKYLL_DIR) && bundle exec jekyll serve
+
+drafts: install ## Run server with drafts visible
 	cd $(JEKYLL_DIR) && bundle exec jekyll serve --drafts
 
 clean: ## Clean generated files
