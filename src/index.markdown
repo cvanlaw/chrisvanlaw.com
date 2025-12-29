@@ -5,14 +5,28 @@
 layout: home
 ---
 
-# Objective
+# About
 
-Highly motivated software and devops engineer seeking a challenging senior individual contributor position, where I can utilize my expertise in cloud-native and microservice architectures and extensive experience in delivering quality solutions to Fortune 100 customers.
+Platform Engineer focused on cloud-native infrastructure, developer experience, and AI-powered tooling. Building systems that are reliable, observable, and enable teams to move fast. Experienced in Kubernetes cluster management, infrastructure automation with Terraform, and establishing observability practices using Datadog. Passionate about reducing operational burden through better abstractions and empowering engineers with self-service platforms.
 
 # Experience
+### Fanatics Betting & Gaming
+
+Online sports betting and iGaming platform.
+
+#### Staff Engineer, Platform Engineering | *October 2023 - Present*
+
+Lead strategic platform infrastructure initiatives supporting sports betting operations across multiple EKS clusters.
+
+* Led infrastructure buildout for Fanatics Markets (FMX) trading platform, provisioning AWS accounts, EKS clusters, and observability systems
+* Rewrote RDS snapshot system from Python to Go, reducing memory usage from multiple gigabytes to under 100MB
+* Took ownership of Datadog vendor relationship, coordinating product meetings and implementing cost transparency reporting
+* Implemented AI-powered platform tooling using AWS Bedrock for automated PR review and intelligent support request routing
+* Advanced to AWS re:Invent semi-finals in Fanatics AI League competition, developing a responsible gaming AI assistant
+
 ### rearc
 A boutique cloud engineering and devops consulting company.
-#### Lead Cloud Engineer | *August 2021 - Present*
+#### Lead Cloud Engineer | *August 2021 - October 2023*
 Lead customer engagements designing and implementing cloud-native and microservice architectures. Throughout multiple customer engagements:
 
 * Designed and delivered an end-to-end SaaS authentication and authorization system using OAuth 2.0 and OIDC. Delivered user migration plan and tooling to allow the customer to migrate users with minimal end-user impact.
@@ -99,6 +113,7 @@ Assist QA team in performing test cases and recording/reporting their results to
 * SQL
 * TypeScript
 * Python
+* Go
 * HTML
 * JavaScript
 * CSS
@@ -118,15 +133,18 @@ Assist QA team in performing test cases and recording/reporting their results to
     * Solutions Architect Associate
 * Azure
 
-### Tools 
+### Tools
 
 * AWS
+    * Bedrock
 * Azure
 * Kubernetes
     * EKS
     * AKS
+    * Karpenter
 * Helm
 * Terraform
+* Datadog
 * CI/CD
     * Azure DevOps
     * GitHub Actions
