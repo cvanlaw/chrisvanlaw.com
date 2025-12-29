@@ -1,0 +1,10 @@
+src/_site
+src/.jekyll-cache
+.git
+.github
+.claude
+.ruby-lsp
+*.md
+Makefile
+Dockerfile
+.dockerignore
