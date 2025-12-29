@@ -8,27 +8,25 @@ Personal website for Chris Van Law (chrisvanlaw.com) built with Jekyll 4.2 and d
 
 ## Development Commands
 
+This project uses Docker to avoid local Ruby version management issues.
+
 Using Makefile (run from repository root):
 
 ```bash
-make help      # Show available commands
-make install   # Install dependencies
-make serve     # Run local development server (auto-rebuilds on changes)
-make build     # Build site (output to src/_site/)
-make drafts    # Run server with drafts visible
-make clean     # Clean generated files
+make help         # Show available commands
+make serve        # Run local development server with live reload (http://localhost:4000)
+make build        # Build the site (output to src/_site/)
+make drafts       # Run server with drafts visible
+make clean        # Clean generated files
+make install      # Install/update dependencies in container
+make shell        # Open bash shell in container
+make docker-down  # Stop and remove containers
 ```
 
-Or use bundle commands directly from the `src/` directory:
-
-```bash
-bundle install
-bundle exec jekyll serve
-bundle exec jekyll build
-bundle exec jekyll serve --drafts
-```
-
-Note: Jekyll config changes require server restart.
+Note:
+- First run will build the Docker image (Ruby 3.1 with bundler 2.3.12)
+- Jekyll config changes require server restart (Ctrl+C and `make serve` again)
+- Site runs at http://localhost:4000 with live reload enabled
 
 ## Architecture
 
@@ -57,7 +55,9 @@ Requires AWS credentials and config in GitHub secrets:
 - `BUCKET_NAME`
 - `DISTRIBUTION_ID`
 
-## Ruby Environment
-- Requires Ruby 3.1 (per CI workflow)
-- System may have Ruby 2.6, use `ruby/setup-ruby` or rbenv/rvm for correct version
-- Gemfile.lock specifies bundler 2.3.12
+## Docker Setup
+- Uses Ruby 3.1 base image
+- Bundler 2.3.12 installed
+- Volume mounts `src/` directory for live editing
+- Bundle cache persisted in Docker volume for faster rebuilds
+- No local Ruby installation required
