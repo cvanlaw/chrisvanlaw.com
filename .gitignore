@@ -1,6 +1,9 @@
 bower_components
 node_modules
 
+# Worktrees
+.worktrees/
+
 ### Terraform ###
 # Local .terraform directories
 **/.terraform/*
