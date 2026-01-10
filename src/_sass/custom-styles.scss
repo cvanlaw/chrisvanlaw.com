@@ -1,0 +1,77 @@
+// Base styles
+:root {
+  --color-bg: #{$color-bg-light};
+  --color-text: #{$color-text-light};
+  --color-text-secondary: #{$color-text-secondary-light};
+  --color-accent: #{$color-accent-light};
+  --color-accent-hover: #{$color-accent-hover-light};
+  --color-border: #{$color-border-light};
+}
+
+[data-theme="dark"] {
+  --color-bg: #{$color-bg-dark};
+  --color-text: #{$color-text-dark};
+  --color-text-secondary: #{$color-text-secondary-dark};
+  --color-accent: #{$color-accent-dark};
+  --color-accent-hover: #{$color-accent-hover-dark};
+  --color-border: #{$color-border-dark};
+}
+
+html {
+  font-family: $font-family-sans;
+  font-size: $font-size-body;
+  line-height: $line-height-body;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+// Links
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--color-accent-hover);
+    text-decoration: underline;
+  }
+}
+
+// Headings - monospace
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-mono;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+h2 {
+  font-size: $font-size-section-heading;
+  margin-top: $spacing-section;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+// Content wrapper
+.content-wrapper {
+  max-width: $content-max-width;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+// Secondary text
+.text-secondary {
+  color: var(--color-text-secondary);
+}
+
+// Dividers
+hr {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: 2rem 0;
+}
