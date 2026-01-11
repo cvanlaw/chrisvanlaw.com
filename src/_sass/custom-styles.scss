@@ -150,3 +150,61 @@ hr {
     display: block;
   }
 }
+
+// Hero
+.hero {
+  text-align: center;
+  padding: $spacing-hero 0;
+}
+
+.hero-name {
+  font-family: $font-family-mono;
+  font-size: $font-size-hero-name;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.hero-title {
+  font-size: $font-size-hero-title;
+  color: var(--color-text-secondary);
+  margin: 0 0 1rem;
+}
+
+.hero-tagline {
+  font-size: $font-size-hero-tagline;
+  color: var(--color-accent);
+  margin: 0 0 2rem;
+}
+
+.hero-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+
+  a {
+    color: var(--color-text-secondary);
+    font-size: 0.875rem;
+
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
+}
+
+.hero-cta {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.cta-link {
+  font-size: 1rem;
+  color: var(--color-accent);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
