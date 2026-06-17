@@ -6,7 +6,7 @@ permalink: /resume/
 
 ## About
 
-Platform engineer with nearly two decades of experience building and operating production systems, spanning identity & access management, software engineering, and cloud infrastructure. Leads platform initiatives at the intersection of infrastructure automation, observability, and AI-powered tooling — work that directly shapes how engineering organizations build and ship software.
+Platform engineer with nearly two decades of experience building and operating production systems, spanning identity & access management, software engineering, and cloud infrastructure. Leads platform initiatives at the intersection of infrastructure automation, observability, and AI-powered tooling, directly shaping how engineering organizations build and ship software.
 
 ## Experience
 
@@ -17,11 +17,11 @@ Platform engineer with nearly two decades of experience building and operating p
     <span class="job-date">October 2023 - Present</span>
   </div>
 
-- Led zero-to-one infrastructure standup for a new prediction markets product — provisioned isolated AWS accounts, EKS clusters, and a PrivateLink architecture for private cross-platform API connectivity; delivered ahead of schedule
-- Built AI-powered capabilities into an internal platform tool using AWS Bedrock and the Strands Agent SDK — automated Terraform PR review, intelligent support routing, and full observability of AI systems; advanced to semi-finals at AWS re:Invent
-- Serving as lead IC on an ongoing FinOps showback initiative — built automated cost transparency reporting that surfaces AWS and Datadog spend trends to engineering teams weekly, establishing a foundation for cost ownership across the organization
-- Stabilized Kubernetes cluster operations during peak traffic windows by diagnosing Karpenter node consolidation as the root cause of instability and implementing disruption budgets — improving reliability without sacrificing cost efficiency
-- Designed and executed a phased ingress infrastructure migration with gradual traffic shifting and safe rollback — reducing error rates, cutting running costs, and unlocking new routing capabilities for service teams
+- Led zero-to-one infrastructure standup for a new prediction markets product, provisioning isolated AWS accounts, EKS clusters, and a PrivateLink architecture for private cross-platform API connectivity; delivered ahead of schedule
+- Built AI-powered capabilities into an internal platform tool using AWS Bedrock and the Strands Agent SDK, including automated Terraform PR review, intelligent support routing, and full observability of AI systems; advanced to semi-finals at AWS re:Invent
+- Lead IC on an ongoing FinOps showback initiative; built automated cost transparency reporting that surfaces AWS and Datadog spend trends to engineering teams weekly, establishing a foundation for cost ownership across the organization
+- Stabilized Kubernetes cluster operations during peak traffic windows by diagnosing Karpenter node consolidation as the root cause of instability and implementing disruption budgets, improving reliability without sacrificing cost efficiency
+- Designed and executed a phased ingress infrastructure migration with gradual traffic shifting and safe rollback, reducing error rates, cutting running costs, and unlocking new routing capabilities for service teams
 - Managed AWS account security primitives across 100+ accounts using IaC-driven Service Control Policies; led a compliance-driven data pipeline rewrite from Python to Go, cutting memory usage from gigabytes to under 100MB
 </div>
 
