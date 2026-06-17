@@ -6,7 +6,7 @@ permalink: /resume/
 
 ## About
 
-Platform Engineer focused on cloud-native infrastructure, developer experience, and AI-powered tooling. Building systems that are reliable, observable, and enable teams to move fast. Experienced in Kubernetes cluster management, infrastructure automation with Terraform, and establishing observability practices using Datadog.
+Platform engineer with nearly two decades of experience building and operating production systems, spanning identity & access management, software engineering, and cloud infrastructure. Leads platform initiatives at the intersection of infrastructure automation, observability, and AI-powered tooling — work that directly shapes how engineering organizations build and ship software.
 
 ## Experience
 
@@ -17,11 +17,11 @@ Platform Engineer focused on cloud-native infrastructure, developer experience, 
     <span class="job-date">October 2023 - Present</span>
   </div>
 
-- Led infrastructure buildout for Fanatics Markets (FMX) trading platform, provisioning AWS accounts, EKS clusters, and observability systems
-- Rewrote RDS snapshot system from Python to Go, reducing memory usage from multiple gigabytes to under 100MB
-- Took ownership of Datadog vendor relationship, coordinating product meetings and implementing cost transparency reporting
-- Implemented AI-powered platform tooling using AWS Bedrock for automated PR review and intelligent support request routing
-- Advanced to AWS re:Invent semi-finals in Fanatics AI League competition, developing a responsible gaming AI assistant
+- Led infrastructure standup for Fanatics Markets (FMX) — provisioned isolated AWS accounts, EKS clusters, and a PrivateLink architecture for private cross-platform API connectivity; delivered ahead of schedule
+- Built AI-powered capabilities into the platform Slack bot using AWS Bedrock and the Strands Agent SDK — automated Terraform PR review, intelligent support routing, and full Datadog observability of AI systems; advanced to semi-finals at the Fanatics AI League at AWS re:Invent
+- Established automated cloud cost transparency reporting in Datadog, surfacing AWS and Datadog spend trends to engineering teams weekly; laid the foundation for the organization's FinOps practice
+- Responded to a root account MFA finding across 100+ AWS accounts by implementing Service Control Policies in an IaC-managed account — protecting all current and future accounts at zero ongoing operational cost
+- Designed and implemented the RDS snapshot export system in Python to meet a regulatory requirement, then rewrote it in Go — reducing memory usage from multiple gigabytes to under 100MB
 </div>
 
 <div class="job" markdown="1">
