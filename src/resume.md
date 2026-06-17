@@ -17,11 +17,12 @@ Platform engineer with nearly two decades of experience building and operating p
     <span class="job-date">October 2023 - Present</span>
   </div>
 
-- Led infrastructure standup for Fanatics Markets (FMX) — provisioned isolated AWS accounts, EKS clusters, and a PrivateLink architecture for private cross-platform API connectivity; delivered ahead of schedule
-- Built AI-powered capabilities into the platform Slack bot using AWS Bedrock and the Strands Agent SDK — automated Terraform PR review, intelligent support routing, and full Datadog observability of AI systems; advanced to semi-finals at the Fanatics AI League at AWS re:Invent
-- Established automated cloud cost transparency reporting in Datadog, surfacing AWS and Datadog spend trends to engineering teams weekly; laid the foundation for the organization's FinOps practice
-- Responded to a root account MFA finding across 100+ AWS accounts by implementing Service Control Policies in an IaC-managed account — protecting all current and future accounts at zero ongoing operational cost
-- Designed and implemented the RDS snapshot export system in Python to meet a regulatory requirement, then rewrote it in Go — reducing memory usage from multiple gigabytes to under 100MB
+- Led zero-to-one infrastructure standup for a new prediction markets product — provisioned isolated AWS accounts, EKS clusters, and a PrivateLink architecture for private cross-platform API connectivity; delivered ahead of schedule
+- Built AI-powered capabilities into an internal platform tool using AWS Bedrock and the Strands Agent SDK — automated Terraform PR review, intelligent support routing, and full observability of AI systems; advanced to semi-finals at AWS re:Invent
+- Serving as lead IC on an ongoing FinOps showback initiative — built automated cost transparency reporting that surfaces AWS and Datadog spend trends to engineering teams weekly, establishing a foundation for cost ownership across the organization
+- Stabilized Kubernetes cluster operations during peak traffic windows by diagnosing Karpenter node consolidation as the root cause of instability and implementing disruption budgets — improving reliability without sacrificing cost efficiency
+- Designed and executed a phased ingress infrastructure migration with gradual traffic shifting and safe rollback — reducing error rates, cutting running costs, and unlocking new routing capabilities for service teams
+- Managed AWS account security primitives across 100+ accounts using IaC-driven Service Control Policies; led a compliance-driven data pipeline rewrite from Python to Go, cutting memory usage from gigabytes to under 100MB
 </div>
 
 <div class="job" markdown="1">
