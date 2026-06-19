@@ -52,7 +52,7 @@ jobs:
         working-directory: build_assets
         run: |
           aws s3 sync . s3://$BUCKET_NAME --metadata-directive 'REPLACE'
-          aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths /index.html
+          aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths "/*"
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
